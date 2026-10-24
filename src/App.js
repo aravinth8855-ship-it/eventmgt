@@ -77,7 +77,10 @@ function App() {
       />
 
       <div className="main-layout">
-        <Sidebar isOpen={isSidebarOpen} />
+        <Sidebar
+          isOpen={isSidebarOpen}
+          onNavigate={() => setIsSidebarOpen(false)}
+        />
 
         <main className="main-content">
           <Routes>
